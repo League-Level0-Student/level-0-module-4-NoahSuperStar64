@@ -29,10 +29,10 @@ for (int i = 0; i < Bortnite.length(); i++) {
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
-String Character = JOptionPane.showInputDialog("*Smash bros anouncer voice* CHOOSE YOUR CHARACTER")
+String Character = JOptionPane.showInputDialog("*Smash bros anouncer voice* CHOOSE YOUR CHARACTER");
 		for (int i = 0; i < Bortnite.length(); i++) {
 			if(Character.charAt(0)==Bortnite.charAt(i)) {
-				
+				JOptionPane.showMessageDialog(null, Character+" is at index "+i);
 			}
 		}
 	}
