@@ -32,7 +32,7 @@ for (int i = 0; i < Bortnite.length(); i++) {
 String Character = JOptionPane.showInputDialog("*Smash bros anouncer voice* CHOOSE YOUR CHARACTER");
 		for (int i = 0; i < Bortnite.length(); i++) {
 			if(Character.charAt(0)==Bortnite.charAt(i)) {
-				JOptionPane.showMessageDialog(null, Character+" is at index "+i);
+				
 			}
 		}
 	}

@@ -8,22 +8,25 @@ public class HappyPet {
 	static int hapinesslevel = 0;
 	public static void main(String[] args) {
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
-String Pet = JOptionPane.showInputDialog("*smash bros anouncer voice again* CHOOSE YOUR PET");
+int Num = JOptionPane.showOptionDialog(null, "CHOOSE YOU PET", "CHOOSE YOU PET", 0, JOptionPane.INFORMATION_MESSAGE, null,
+		new String[] { "Cat", "Dog", "Lizard"}, null);
+
+String Pet
 		// 7. REPEAT steps 3 - 6 enough times to make your pet happy!
 		
 			// 3. Use showOptionDialog to ask the user what they want to do to make their pet happy
 			//    (eg: cuddle, food, water, take a walk, groom, clean up poop).
 			//    Make sure to customize the title and question too.
 			int task = JOptionPane.showOptionDialog(null, "Make your "+Pet+" love you! Do it! IT'S IN YOUR CONTRACT.", "Devil's dea- Ah, I mean, Pet care!", 0, JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Sing", "Food/Water", "Walk" }, null);
+					new String[] { "Sing", "Feed", "Toys"}, null);
 if(task==0) {
-	Song();
+	Song(Pet);
 }
 else if(task==1) {
-	Feed();
+	Feed(Pet);
 }
 else if(task==2) {
-	Walksy();
+	Toy(Pet);
 }
 			// 5. Use user input to call the appropriate method created in step 4.
 
@@ -35,17 +38,28 @@ else if(task==2) {
 	// 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
-	static void Song () {
-		JOptionPane.showMessageDialog(null, "Seriously, why isn't this a common thing? Singing is fun! As long as no one is around who can tell what you're singing. And judge you. Your pet doesn't judge you.");
-	hapinesslevel=(+20);
+	static void Song (String param) {
+		if(param.equalsIgnoreCase("Lizard")) {
+		JOptionPane.showMessageDialog(null, "Lizards can't hear sounds, only feel vibrations.");
+	hapinesslevel=(+10);
+		}
+		else if(param.equalsIgnoreCase("Dog")) {
+			JOptionPane.showMessageDialog(null, "Dogs always look happy when you talk to them, I doubt singing is any different!");
+		hapinesslevel=(+20);
+		}
+		else if(param.equalsIgnoreCase("Cat")) {
+			JOptionPane.showMessageDialog(null, "Cats have VERY sensitive hearing, so keep your voice down.");
+		hapinesslevel=(+15);
+		}
 	}
 
-	static void Feed() {
-		JOptionPane.showMessageDialog(null, "Oh yeah I guess that's necessary. Your pet is now full.");
+	static void Feed(String param) {
+		
+		JOptionPane.showMessageDialog(null, "Oh yeah I guess that's necessary. Your "+param+" is now full.");
 		hapinesslevel=(+15);
 	}
 	
-	static void Walksy() {
-		JOptionPane.showMessageDialog(null, "The outcome of this really depends on the kind of pet you have. It works well for a dog, not so much for a lizard or something like that. Nevertheless, your pet is satisfied.");
+	static void Toy(String param) {
+		JOptionPane.showMessageDialog(null, "");
 	}
 }
