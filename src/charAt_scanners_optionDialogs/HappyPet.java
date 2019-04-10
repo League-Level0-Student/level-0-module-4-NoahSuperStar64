@@ -75,7 +75,7 @@ else if(task==2) {
 		hapinesslevel=hapinesslevel+15;
 		}
 		else if(param.equals("Dog")) {
-			JOptionPane.showMessageDialog(null, "Dogs eat a anything from my experience, including bacon, hamburgers, cheese...");
+			JOptionPane.showMessageDialog(null, "Dogs eat anything from my experience, including bacon, hamburgers, cheese...");
 		hapinesslevel=hapinesslevel+25;
 		}
 		else if(param.equals("Cat")) {
