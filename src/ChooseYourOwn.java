@@ -39,12 +39,18 @@ public class ChooseYourOwn {
 	}
 
 	static void Hocolan(int Stupidity) {
-int Story3 = JOptionPane.showOptionDialog(null, "Now that the dark knights have been driven out of Hocolan the people have started to return to their houses.", "The fallen Capital", 0, JOptionPane.INFORMATION_MESSAGE, null, 
-		new String[] { "Stay and restore order", "Lead an all out assault on Umbra's castle", "Fortnite dance to assert dominance" }, null);
-	if(Story3==0) {
-		JOptionPane.showMessageDialog(null, "Hocolan is rebuilt, but the presence of Queen Umbra remains a passive threat on the Hocolation's daily lives until the end of time. THE END");
-	}
-	
+		int Story3 = JOptionPane.showOptionDialog(null,
+				"Now that the dark knights have been driven out of Hocolan the people have started to return to their houses.",
+				"The fallen Capital", 0, JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Stay and restore order",
+						"Lead an all out assault on Umbra's castle", "Fortnite dance to assert dominance" },
+				null);
+		if (Story3 == 0) {
+			JOptionPane.showMessageDialog(null,
+					"Hocolan is rebuilt, but the presence of Queen Umbra remains a passive threat on the Hocolation's daily lives until the end of time. THE END");
+		} else if (Story3 == 2 && Stupidity == 0) {
+			JOptionPane.showMessageDialog(null,
+					"After the intense battle, you celebrate by doing a fortnite dance.\nThe locals cringe so much that you are arrested and sentenced to life in prison. THE END");
+		}
 	}
 
 }
