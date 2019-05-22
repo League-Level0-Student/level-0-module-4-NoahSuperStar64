@@ -21,8 +21,8 @@ public class FruitQuiz extends KeyAdapter {
 				"<html>What kind of creature is the kaiju Kamacuras? <br> A: Cybernetic Snapping Turtle <br> B: Divine Iguana <br> C: Irradiated Praying Mantis</html>");
 		question3 = new JLabel(
 				"<html>Which is another name for the kaiju Mothra? <br> A: The Thing <br> B: Battra <br> C: Chrysalis</html>");
-	    question4 = new JLabel(
-	    		"<html>What is the name of the kaiju first appearing in 'Ghidorah, the Three-Headed Monster'? <br> A: Keizer Ghidorah <br> B: Desghidorah <br> C: King Ghidorah</html>");
+		question4 = new JLabel(
+				"<html>What is the name of the kaiju first appearing in 'Ghidorah, the Three-Headed Monster'? <br> A: Keizer Ghidorah <br> B: Desghidorah <br> C: King Ghidorah</html>");
 	}
 
 	@Override

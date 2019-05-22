@@ -26,23 +26,36 @@ public class DontForgetTheLyrics {
 		playSound("PRESSURE.wav");
 		// 6. Make a pop-up for the player to type their answer.
 		JOptionPane.showMessageDialog(null, "Listen closely...");
-		Thread.sleep(000);
 		String Answer1 = JOptionPane.showInputDialog("Now... What were the lyrics? No punctuation please.");
 		// 7. If they answered correctly, tell them that they were right.
-		if (Answer1.equalsIgnoreCase("Pressure pushing down on me pressing down on you no man asked for")) {
+		if (Answer1.equalsIgnoreCase("Pressure pushing down on me pressing down on you no man ask for")) {
 			JOptionPane.showMessageDialog(null, "You are absolutely correct! Next question.");
 		}
 		// 8. Otherwise, tell them they are wrong, and give them the answer.
 		else {
 			JOptionPane.showMessageDialog(null,
-					"Sorry, that is incorrect. The correct answer is:\n Pressure Pushing down on me pressing down on you\nNo man asked for\nNext question.");
+					"Sorry, that is incorrect. The correct answer is:\n Pressure Pushing down on me pressing down on you\nNo man ask for\nNext question.");
 		}
 		// 9. Record another sound and repeat steps 5-8.
 		playSound("FIREFLIES2.wav");
 		JOptionPane.showMessageDialog(null, "Listen closely...");
 		String Answer2 = JOptionPane.showInputDialog("Now... the lyrics?");
-		if(Answer2.equalsIgnoreCase("I'd like to make myself believe that planet earth turns slowly")){
-			
+		if (Answer2.equalsIgnoreCase("I'd like to make myself believe that planet earth turns slowly")) {
+			JOptionPane.showMessageDialog(null, "You're absolutely correct! Next question.");
+		} else {
+			JOptionPane.showMessageDialog(null,
+					"Sorry, that's incorrect. The correct answer is:\n I'd like to make myself believe that planet earth turns slowly\n Next question.");
+		}
+		playSound("SPACEJAM.wav");
+		JOptionPane.showMessageDialog(null, "Listen closely...");
+		String Answer3 = JOptionPane.showInputDialog("Now, the lyrics?");
+		if (Answer3.equalsIgnoreCase(
+				"Wave your hands in the air if you feel right we're gonna take it into overtime welcome to the space jam")) {
+			JOptionPane.showMessageDialog(null,
+					"You're absolutely correct! That's the end of the quiz, I hope you had fun!");
+		} else {
+			JOptionPane.showMessageDialog(null,
+					"Sorry... That's incorrect. That's the end of the quiz, I hope you enjoyed!");
 		}
 		// 10. [optional] Add a points variable that will calculate their final score.
 	}

@@ -50,6 +50,9 @@ public class ChooseYourOwn {
 		} else if (Story3 == 2 && Stupidity == 0) {
 			JOptionPane.showMessageDialog(null,
 					"After the intense battle, you celebrate by doing a fortnite dance.\nThe locals cringe so much that you are arrested and sentenced to life in prison. THE END");
+		}else if(Story3 == 2 && Stupidity > 0) {
+			JOptionPane.showMessageDialog(null,
+					"After taking back Hocolan, you celebrate by doing a fortnite dance.\nThe locals no longer take you seriously, but you have bigger problems to worry about.");
 		}
 	}
 
