@@ -32,7 +32,16 @@ public class ChooseYourOwn {
 			if (Story2 == 0) {
 				JOptionPane.showMessageDialog(null,
 						"You arrive at the Jellyfish Forest, a beautiful place of tranquility and ferocity.\nThough the only thing close to a jellyfish in it is\nNomurox, a powerful alien-like protector of the forest.");
-
+			} else if (Story2 == 1) {
+				JOptionPane.showMessageDialog(null,
+						"You reach the ice kingdom. Once a flourishing land, the recent attacks have forced many to abandon the frozen domain,\n leaving it a barren tundra under a snow-covered peak.");
+			int	Boss1 = JOptionPane.showOptionDialog(null,
+						"Suddenly, the ground begins to shake. Then, the mountain explodes, leaving the kaiju-sized moruega standing in it's wake.\n There's no escaping moruega's sights, but remember, if you can defeat even one of the three dark forces, the rest will weaken.",
+						"Moruega, mecha monster.", 0, JOptionPane.INFORMATION_MESSAGE, null,
+						new String[] { "Catapult yourself onto the monster's face", "Climb and rewire the monster",
+								"Trip the monster" },
+						null);
+				
 			}
 		}
 
@@ -50,7 +59,7 @@ public class ChooseYourOwn {
 		} else if (Story3 == 2 && Stupidity == 0) {
 			JOptionPane.showMessageDialog(null,
 					"After the intense battle, you celebrate by doing a fortnite dance.\nThe locals cringe so much that you are arrested and sentenced to life in prison. THE END");
-		}else if(Story3 == 2 && Stupidity > 0) {
+		} else if (Story3 == 2 && Stupidity > 2) {
 			JOptionPane.showMessageDialog(null,
 					"After taking back Hocolan, you celebrate by doing a fortnite dance.\nThe locals no longer take you seriously, but you have bigger problems to worry about.");
 		}
