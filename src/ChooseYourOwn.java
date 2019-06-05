@@ -35,13 +35,22 @@ public class ChooseYourOwn {
 			} else if (Story2 == 1) {
 				JOptionPane.showMessageDialog(null,
 						"You reach the ice kingdom. Once a flourishing land, the recent attacks have forced many to abandon the frozen domain,\n leaving it a barren tundra under a snow-covered peak.");
-			int	Boss1 = JOptionPane.showOptionDialog(null,
-						"Suddenly, the ground begins to shake. Then, the mountain explodes, leaving the kaiju-sized moruega standing in it's wake.\n There's no escaping moruega's sights, but remember, if you can defeat even one of the three dark forces, the rest will weaken.",
+				int Boss1 = JOptionPane.showOptionDialog(null,
+						"Suddenly, the ground begins to shake. The mountain then explodes, leaving the kaiju-sized moruega standing in it's wake.\n There's no escaping moruega's sights, but remember, if you can defeat even one of the three dark forces, the rest will weaken.",
 						"Moruega, mecha monster.", 0, JOptionPane.INFORMATION_MESSAGE, null,
-						new String[] { "Catapult yourself onto the monster's face", "Climb and rewire the monster",
-								"Trip the monster" },
+						new String[] { "Catapult yourself onto the monster's face", "Climb inside",
+								"" },
 						null);
-				
+				if (Boss1 == 0) {
+					JOptionPane.showMessageDialog(null,
+							"...Did you really expect that to work?\nUsing a nearby catapult(Don't ask why a catapult was nearby), you launch yourself onto moruega's face.\nMoruega has eye lasers. Enough said.\nGAME OVER");
+				}
+				else if (Boss1 == 2) {
+					JOptionPane.showMessageDialog(null, "");
+				}
+				else if (Boss1 == 1) {
+					JOptionPane.showMessageDialog(null, "You run up to the robot and start scaling its metal armour.\n Eventually you reach a point where you can crawl inside, and you find what appears to be a large battery surrounded by cables.\nYou cut each cable, careful not to electrocute yourself. After the last cable, Moruega loses power and falls over, while you emerge victorious.\nQueen Umbra and Termina Catastrophe are forced to retreat to your own realm, and peace is restored for the foreseeable future.\nTHE END");
+				}
 			}
 		}
 
@@ -55,11 +64,11 @@ public class ChooseYourOwn {
 				null);
 		if (Story3 == 0) {
 			JOptionPane.showMessageDialog(null,
-					"Hocolan is rebuilt, but the presence of Queen Umbra remains a passive threat on the Hocolation's daily lives until the end of time. THE END");
+					"Hocolan is rebuilt, but the presence of Queen Umbra remains a passive threat on the Hocolatian's daily lives until the end of time.\nTHE END...?");
 		} else if (Story3 == 2 && Stupidity == 0) {
 			JOptionPane.showMessageDialog(null,
-					"After the intense battle, you celebrate by doing a fortnite dance.\nThe locals cringe so much that you are arrested and sentenced to life in prison. THE END");
-		} else if (Story3 == 2 && Stupidity > 2) {
+					"After the intense battle, you celebrate by doing a fortnite dance.\nThe locals cringe so much that you are arrested and sentenced to life in prison.\nGAME OVER");
+		} else if (Story3 == 2 && Stupidity == 2) {
 			JOptionPane.showMessageDialog(null,
 					"After taking back Hocolan, you celebrate by doing a fortnite dance.\nThe locals no longer take you seriously, but you have bigger problems to worry about.");
 		}
