@@ -3,8 +3,8 @@ public class Bohemianrhapsody {
 public static void main(String[] args) {
 	try
 	{
-		Assert(life.real);
-		Assert(life.fantasy);
+		Assert(Life.real);
+		Assert(Life.fantasy);
 	}
 	catch (LandSlideException ex)
 }
