@@ -20,6 +20,9 @@ if(dist (209, 251, mouseX, mouseY)<25){
   X = mouseX;
   Y = mouseY;
 }
+else{
+  
+}
 if(dist (256, 235, mouseX, mouseY)<10){
 X2 = mouseX;
 Y2 = mouseY;
